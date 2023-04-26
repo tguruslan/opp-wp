@@ -1,0 +1,13 @@
+.docList {font-size: 12px;}
+.rs_list li {list-style: none;}
+.rs_list .rs_list {display: none;}
+.rs_dir {cursor: pointer;}
+.doclist > ul {padding: 0;}
+.rs_dir:before {content: "\f07b";color: #FFAA00;font-family: "FontAwesome";margin-right: 10px;font-size: 16px;}
+.rs_dir.open:before {content: "\f07c";color: #FFAA00;font-family: "FontAwesome";margin-right: 10px;font-size: 16px;}
+.rs_file a.prew {color: green;}
+.rs_file a.file:before {content: "\f15c";color: #1878D4;font-family: "FontAwesome";margin-right: 5px;font-size: 16px;}
+.rs_file a.file[data-type-file="pdf"]:before {content: "\f1c1" !important;color: red;}
+.rs_file a.file[data-type-file="xls"]:before, .rs_file a.file[data-type-file="xlsx"]:before {content: "\f0ce" !important;}
+.rs_file a.file[data-type-file="doc"]:before, .rs_file a.file[data-type-file="docx"]:before, .rs_file a.file[data-type-file="rtf"]:before {content: "\f15c" !important;}
+.rs_file a.file[data-type-file="rar"]:before, .rs_file a.file[data-type-file="zip"]:before {content: "\f1c6" !important;}
